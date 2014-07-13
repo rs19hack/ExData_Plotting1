@@ -4,7 +4,7 @@ unzip("household_power_consumption.zip")
 
 rawfile <- "household_power_consumption.txt"
 
-# Read in the data from the uncompredded raw data:
+# Read in the data from the uncompressed raw data:
 d <- read.table(rawfile, header=T, sep=';', na.strings="?", colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
 
 # Select the two days of interest, as specified in assignment instructions.
