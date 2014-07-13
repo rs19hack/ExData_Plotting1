@@ -1,5 +1,5 @@
 library(sqldf)
-rawfile <- "c:/temp/temp/exdata-data-household_power_consumption/household_power_consumption.txt"
+rawfile <- "household_power_consumption.txt"
 
 sqlquery <- "SELECT * from file WHERE Date = '1/2/2007' OR Date = '2/2/2007'"
 
