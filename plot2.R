@@ -9,7 +9,7 @@ d <- read.table(rawfile, header=T, sep=';', na.strings="?", colClasses=c("charac
 
 # Select the two days of interest, as specified in assignment instructions.
 
-d2 <- d[(d$Date == "1/2/2007") | (d$Date == "2/2/2007"),]
+d2 <- subset(d, (d$Date == "1/2/2007") | (d$Date == "2/2/2007"))
 
 # Add new column with POSIX dat/time format to facilitate analysis & plotting.
 
